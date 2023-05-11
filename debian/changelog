@@ -1,3 +1,9 @@
+ddepextract (0.0.2) UNRELEASED; urgency=medium
+
+  * Fix variable scope.
+
+ -- s0600204 <dev@s0600204>  Thu, 11 May 2023 22:02:40 +0100
+
 ddepextract (0.0.1) UNRELEASED; urgency=medium
 
   * Initial packaging.

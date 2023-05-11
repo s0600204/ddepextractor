@@ -12,7 +12,7 @@ my $build_depends = deps_parse($control_fields->{'Build-Depends'});
 my @dependencies = split(/, /, $build_depends);
 foreach (@dependencies) {
 	if ($_ =~ /\(/) {
-		@versioned_dep = split(/ /, $_);
+		my @versioned_dep = split(/ /, $_);
 		$_ = @versioned_dep[0];
 		if (substr(@versioned_dep[1], 1, 1) eq "=") {
 			$_ .= "=" . substr(@versioned_dep[2], 0, -1);
