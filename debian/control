@@ -13,7 +13,8 @@ Homepage: https://github.com/s0600204/ddepextract.git
 Package: ddepextract
 Architecture: all
 Depends:
- ${misc:Depends}
+ ${misc:Depends},
+ ${perl:Depends}
 Description: Debian Package Build Dependency Extractor
  Reads a debian/control file and exports a list of build dependencies
  in a format that can be piped to apt-get install.
