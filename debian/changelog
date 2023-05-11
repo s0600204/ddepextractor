@@ -1,0 +1,5 @@
+ddepextract (0.0.1) bookworm; urgency=medium
+
+  * Initial packaging.
+
+ -- s0600204 <dev@s0600204>  Thu, 11 May 2023 21:10:00 +0100

@@ -1,0 +1,22 @@
+Source: ddepextract
+Section: perl
+Priority: optional
+Maintainer: s0600204 <dev@s0600204>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dpkg,
+ perl-base
+Standards-Version: 4.6.2
+Homepage: https://github.com/s0600204/ddepextract.git
+
+Package: ddepextract
+Architecture: all
+Depends:
+ ${misc:Depends}
+Description: Debian Package Build Dependency Extractor
+ Reads a debian/control file and exports a list of build dependencies
+ in a format that can be piped to apt-get install.
+ .
+ Note: Due to apt/apt-get's inability to support lt, le, ge, or gt
+ versioning when specifying packages, this context is removed.
