@@ -1,3 +1,9 @@
+ddepextract (0.0.3) UNRELEASED; urgency=medium
+
+  * Use $ instead of @ when referring to a single element of an array
+
+ -- s0600204 <dev@s0600204>  Thu, 18 Jan 2024 22:44:00 +0000
+
 ddepextract (0.0.2) UNRELEASED; urgency=medium
 
   * Fix variable scope.

@@ -13,9 +13,9 @@ my @dependencies = split(/, /, $build_depends);
 foreach (@dependencies) {
 	if ($_ =~ /\(/) {
 		my @versioned_dep = split(/ /, $_);
-		$_ = @versioned_dep[0];
-		if (substr(@versioned_dep[1], 1, 1) eq "=") {
-			$_ .= "=" . substr(@versioned_dep[2], 0, -1);
+		$_ = $versioned_dep[0];
+		if (substr($versioned_dep[1], 1, 1) eq "=") {
+			$_ .= "=" . substr($versioned_dep[2], 0, -1);
 		}
 	}
 }
